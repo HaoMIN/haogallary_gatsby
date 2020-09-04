@@ -35,15 +35,3 @@ const Home = props => {
 }
 
 export default Home
-
-export const pageQuery = graphql`
-  query {
-    indexImage: file(relativePath: { eq: "sarah-dorweiler-123483.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`

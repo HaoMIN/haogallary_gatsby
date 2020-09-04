@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 import BackgroundImage from "gatsby-background-image"
-import { StyledFullScreenWrapper } from "./sharedStyledComponents"
+import { StyledFullScreenWrapper } from "./SharedStyledComponents"
 
 /**
  * In this functional component a fullscreen <BackgroundImage />  is created.
@@ -18,8 +18,8 @@ const FullBackground = ({ className, children }) => {
       query {
         desktop: file(relativePath: { eq: "Tokyo_Mall.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            fixed(width: 4160, height:2340) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -28,7 +28,7 @@ const FullBackground = ({ className, children }) => {
   )
 
   // Single Image Data
-  const imageData = desktop.childImageSharp.fluid
+  const imageData = desktop.childImageSharp.fixed
 
   return (
     <StyledFullScreenWrapper>
