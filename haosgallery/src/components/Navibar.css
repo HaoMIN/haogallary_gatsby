@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+
+.custom-text-align {
+  text-align: left;
+}
+
+.navbar-brand {
+  font-family: "Homemade Apple", cursive;
+  font-size: 1.25rem;
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+  border: 0px;
+}
+
+.dropdown-menu.show {
+  background-color: #343a40;
+  border: 10px;
+}
+
+.dropdown-item {
+  color: #ffff !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color:#a93d2d !important;
+}
