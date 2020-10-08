@@ -1,0 +1,19 @@
+html,
+body {
+  background-color: #7b8888;
+}
+
+.bgLayout {
+  /* height: 100%; */
+  background-color: #7b8888;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#bgColorLayout {
+  /* max-width: 100%;
+  max-height: 100vh%; */
+  height: 100vh;
+}
